@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF­8">
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    
+    <!-- each select option matches a specific data object-->
+    
+    <!--data objects of the same type should be kept withtin the same select drop down menu-->
+   <div class="header">
+    <form class="filters">
+    
+    
+        <select id="assigned-fruit-filter" class="form-control">
+            <option>None</option>
+            <option>apple</option>
+            <option>banana</option>
+            <option>pineapple</option>
+            <option>plum</option>
+            <option>pear</option>
+            <option>grapes</option>
+            <option>coconut</option>
+            <option>berry</option>
+            <option>lychee</option>
+            <option>citrus</option>
+        </select>    
+       
+    
+    <br>
+	<br>
+   
+ 
+        <select id="assigned-colour-filter" class="form-control">
+            <option>None</option>
+            <option>red</option>
+            <option>green</option>
+            <option>purple</option>
+            <option>yellow</option>
+            <option>white</option>
+            <option>black</option>
+            <option>brown</option>
+            <option>orange</option>
+            <option>blue</option>
+            
+        </select>  
+        <br>
+		<br>
+       
+	    
+       </form>
+	   		<button id="all">Show All</button>
+        	<button id="go">Submit</button>
+	   </div> 
+    
+
+    <!-- data-fruit="*" data-colour="*" -->
+   
+    
+    
+    
+<div id="parent">
+<!-- each div contains options for both data objects so that they can be cross refrenced with the jquery filter -->
+<!-- data objects can be made up as long as they match the object being called in the jquery filter function and the show all data call -->
+  <div class="box red" data-fruit="apple" data-colour="red">Apple</div>
+  <div class="box yellow" data-fruit="apple" data-colour="yellow">Yellow Apple</div>
+  <div class="box green" data-fruit="apple" data-colour="green">Green Apple</div>
+  <div class="box yellow" data-fruit="pineapple" data-colour="yellow">Pineapple</div>
+  <div class="box purple" data-fruit="plum" data-colour="purple">Plum</div>
+  <div class="box green" data-fruit="pear" data-colour="green">Pear</div>
+  <div class="box purple" data-fruit="grapes" data-colour="purple"> Grapes</div>
+  <div class="box orange" data-fruit="citrus" data-colour="orange">Orange</div>
+  <div class="box yellow" data-fruit="banana" data-colour="yellow">Banana</div>
+  <div class="box brown" data-fruit="lychee" data-colour="brown">Lychee Fruit</div>
+  <div class="box green" data-fruit="grapes" data-colour="green">Grapes</div>
+  <div class="box white" data-fruit="coconut" data-colour="white">Coconut</div>
+  <div class="box black" data-fruit="berry" data-colour="black">Black Berry</div>
+  <div class="box blue" data-fruit="berry" data-colour="blue">Blue Berry</div>
+  <div class="box red" data-fruit="berry" data-colour="red">Strawberries</div>
+  <div class="box yellow" data-fruit="pear" data-colour="yellow">Yellow Pear</div>
+  <div class="box red" data-fruit="grapes" data-colour="red">Red Grapes</div>
+  <div class="box brown" data-fruit="banana" data-colour="brown">Plantain</div>
+  <div class="box yellow" data-fruit="citrus" data-colour="yellow">Lemon</div>
+  <div class="box green" data-fruit="citrus" data-colour="green">Lime</div>
+  
+</div>
+<script src="js/dropIt.js"></script>    
+</body>
+    
+
+
+</html>
